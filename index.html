@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sweetheart! ❤️</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Varela Round', sans-serif;
+            color: #333;
+            line-height: 1.8;
+            background: linear-gradient(180deg, #ffdee9 0%, #ffeef2 100%) !important;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .birthday-tag {
+            background-color: rgba(255, 117, 140, 0.15);
+            color: #ff758c;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            color: #ff5e7e;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 35px;
+            margin: 30px 0;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(255, 117, 140, 0.1);
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #ff5e7e;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .music-instruction {
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .song-cover-container {
+            background: #fffafb;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px dashed #ff758c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .album-art {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .album-art img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .song-details h3 {
+            color: #444;
+            font-size: 1.2rem;
+            margin-bottom: 2px;
+        }
+
+        .song-details p {
+            color: #ff758c;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .custom-audio-player {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #ff5e7e;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 94, 126, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #ff3b60;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 94, 126, 0.4);
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .photo-card {
+            background: #fff;
+            padding: 12px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto !important;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .caption {
+            margin-top: 12px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.95rem;
+            text-align: left;
+            padding: 0 5px;
+        }
+
+        .love-letter {
+            text-align: left;
+            background: #fffafb;
+            padding: 30px;
+            border-radius: 16px;
+            font-size: 1.05rem;
+            border-left: 4px solid #ff5e7e;
+        }
+
+        .love-letter p {
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            text-align: right;
+            color: #ff5e7e;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="birthday-tag">6 July 2026</span>
+            <h1>Happy Birthday, Zaara! 🥳</h1>
+            <p>We might be thousands of miles apart right now, sweetheart, but you are my entire world. Always.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="section music-section">
+            <h2>A little surprise for you... 🎤</h2>
+            <p class="music-instruction">put ur earphones on to play this</p>
+            
+            <div class="song-cover-container">
+                <div class="album-art">
+                    <img src="https://i.postimg.cc/T1nXcTqd/Snapchat-1920854580.jpg" alt="Song Cover Art">
+                </div>
+                <div class="song-details">
+                    <h3>My Cover for You</h3>
+                    <p>Sung by Raj</p>
+                </div>
+                
+                <audio controls class="custom-audio-player">
+                    <source src="birthday-song.mp4" type="audio/mp4">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <button id="downloadBtn" class="download-btn">
+                    Download My Song ⬇️
+                </button>
+            </div>
+        </section>
+
+        <section class="section gallery-section">
+            <h2>Looking back at us... 📸</h2>
+            <div class="gallery-grid">
+                
+                <div class="photo-card">
+                    <img src="https://i.postimg.cc/mkXPB293/firstlaughtogether.jpg" alt="Our first video call 3 years ago">
+                    <p class="caption">3 years ago. Our very first video call screenshot. I was just so incredibly excited and glad to finally see your face, and how instantly I fell for your smile, sweetheart.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://i.postimg.cc/mgmWjXML/IMG-4131.avif" alt="Special shared moment">
+                    <p class="caption">Just a reminder of what your guy looks like while he's missing you over here. 😊</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://i.postimg.cc/65sW4mLX/Snapchat-548556539.jpg" alt="Special memory photo">
+                    <p class="caption">Sending you the biggest smile since I can't give you a real hug today.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section letter-section">
+            <h2>My Letter To You, Sweetheart... 💌</h2>
+            <div class="love-letter">
+                <p>Hey Zaara,</p>
+                
+                <p>Happy 18th birthday! It honestly kills me that I can't just show up at your door with a cake, hug you, and celebrate this with you in person. If there was any way to skip the distance today, you know I’d do it in a heartbeat.</p>
+                
+                <p>We’ve been talking about it, and we both know the reality. We haven't met face-to-face yet, and because of how things are, it honestly might take us years to finally make it happen—maybe 7 or 8 years. When I think about that number, it sounds crazy to anyone else. But when I think about *you*, I know without a doubt that I will wait however long it takes.</p>
+
+                <p>You're my first ever love, and you've shown me what it's like to truly love someone. Every single day, even across the distance, you make me the happiest guy alive. You have the most beautiful soul, you make me smile so easily, and your laugh completely resets a bad day for me. Nobody else even comes close.</p>
+
+                <p>So yeah, it’s going to take a long time, and it’s going to take a lot of patience. But I promise you right now, I'm not going anywhere. We are going to build our future step by step, call by call, until we never have to say goodbye at an airport again.</p>
+
+                <p>Have the best day today, sweetheart. Eat some cake for me.</p>
+
+                <p class="signature">Forever and always yours, <br> Raj</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by Raj for his favorite person 💖</p>
+    </footer>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // FIXED: Updated download pointer to look for birthday-song.mp4
+            const audioUrl = "birthday-song.mp4";
+            
+            const tempLink = document.createElement('a');
+            tempLink.href = audioUrl;
+            tempLink.setAttribute('download', 'Raj-Song-Cover.mp4');
+            tempLink.style.display = 'none';
+            
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
+        });
+    </script>
+
+</body>
+</html>
